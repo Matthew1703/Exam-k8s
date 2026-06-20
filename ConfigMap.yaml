@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: exam-config
+  namespace: exam-k8s
+  labels:
+    app: exam-app
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam K8s</title>
+    </head>
+    <body>
+        <p>Студент: Бачурин Матвей Владимирович</p>
+        <p>Группа: М4105</p>
+        <p>Версия: v1</p>
+    </body>
+    </html>
